@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_point_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_spacing"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_spacing"
+                android:layout_marginTop="@dimen/bigger_size"
+                android:fontFamily="serif-monospace"
+                android:gravity="start"
+                android:text="@string/add_new_placemark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingStart="@dimen/common_spacing"
+                android:paddingTop="0dp"
+                android:paddingEnd="@dimen/common_spacing"
+                android:paddingBottom="@dimen/common_spacing"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                app:layout_constraintEnd_toStartOf="@id/cancelButton"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/save_button" />
+
+            <ImageButton
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingStart="@dimen/common_spacing"
+                android:paddingTop="0dp"
+                android:paddingEnd="@dimen/common_spacing"
+                android:paddingBottom="@dimen/common_spacing"
+                android:src="@drawable/ic_baseline_cancel_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/cancel_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/placemarkName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/common_spacing"
+            android:layout_marginBottom="@dimen/common_spacing"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:minHeight="@dimen/bigger_size"
+            android:padding="@dimen/small_size"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/placemarkDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/common_spacing"
+            android:layout_marginBottom="@dimen/common_spacing"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/enter_description"
+            android:inputType="textMultiLine"
+            android:minHeight="@dimen/bigger_size"
+            android:padding="@dimen/small_size"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

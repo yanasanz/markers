@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/big_size">
+
+        <Button
+            android:id="@+id/showOnMap"
+            android:layout_width="@dimen/large_size"
+            android:layout_height="@dimen/big_size"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:layout_margin="@dimen/small_size"
+            android:background="@drawable/button_transparent_background"
+            android:fontFamily="serif-monospace"
+            android:text="@string/show_all_on_map"
+            android:layout_gravity="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/showList"
+            android:layout_width="@dimen/large_size"
+            android:layout_height="@dimen/big_size"
+            android:layout_margin="@dimen/small_size"
+            android:background="@drawable/button_transparent_background"
+            android:fontFamily="serif-monospace"
+            android:text="@string/show_list"
+            android:layout_gravity="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/myLocation"
+            android:layout_width="@dimen/large_size"
+            android:layout_height="@dimen/big_size"
+            android:layout_margin="@dimen/small_size"
+            android:background="@drawable/button_transparent_background"
+            android:fontFamily="serif-monospace"
+            android:text="@string/my_location"
+            android:layout_gravity="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_size"
+        android:background="@drawable/show_info_background"
+        android:duplicateParentState="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:text="@string/name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:text="@string/description"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/coords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:text="@string/coordinates"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/edit"
+            android:layout_width="@dimen/large_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:layout_marginBottom="@dimen/common_spacing"
+            android:background="@drawable/button_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallest_size"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:contentDescription="@string/edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/middle_size"
+                android:text="@string/edit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

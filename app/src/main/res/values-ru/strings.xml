@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Маркеры</string>
+    <string name="edit_placemark">Редактировать метку</string>
+    <string name="save_button">Кнопка сохранения</string>
+    <string name="cancel_button">Кнопка отмены</string>
+    <string name="enter_name">Введите название</string>
+    <string name="enter_description">Введите описание</string>
+    <string name="add_new_placemark">Добавить новую метку</string>
+    <string name="show_all_on_map">Показать на карте</string>
+    <string name="show_list">Показать список</string>
+    <string name="coordinates">Координаты</string>
+    <string name="edit">Редактировать</string>
+    <string name="remove">Удалить</string>
+    <string name="my_location">Мое местоположение</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="menu">Меню</string>
+    <string name="list_is_empty">Список пуст</string>
+    <string name="please_fill">Введите информацию</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Markers</string>
+    <string name="edit_placemark">Edit placemark</string>
+    <string name="save_button">Save button</string>
+    <string name="cancel_button">Cancel button</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_description">Enter description</string>
+    <string name="add_new_placemark">Add new placemark</string>
+    <string name="show_all_on_map">Show all on map</string>
+    <string name="show_list">Show list</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="my_location">My location</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="menu">Menu</string>
+    <string name="list_is_empty">The list is empty</string>
+    <string name="please_fill">Please fill the information</string>
+</resources>
